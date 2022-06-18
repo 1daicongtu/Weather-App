@@ -1,5 +1,5 @@
 const APIKey = "f4f38d9a9345e80f82380e6e7c96df33";
-const defaultCity = "Hà Nội";
+const defaultCity = "Hà Nam";
 const $ = document.querySelector.bind(document);
 const box__info = $(".box__info");
 const urlBackground = "https://source.unsplash.com/1600x900/?";
