@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Open+Sans:ital,wght@0,300;1,600&family=Orbitron:wght@500&family=Poppins:ital,wght@0,400;1,200&display=swap');
+    </style>
+    <link rel="stylesheet" href="./main.css">
+    <script>
+        function checkEvent(event, value){
+            return true
+            return (event.keyCode === 13 && value) ?  true : false;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <h1 class="search-err">No results found 😞!</h1>
+        <div class="app">
+            <div class="box__input">
+                <input type="text" name="" id="input-country-id" onkeyup="event.keyCode === 13 && render(this.value.trim())" placeholder="Enter a city or country...">
+                <img src="./image/timKiem.svg" alt="anh search" id="id-search">
+            </div>
+            <div class="box__info">
+                
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="./app.js"></script>
+</body>
+</html>

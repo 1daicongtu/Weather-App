@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+.root{
+    height: 100vh;
+    padding-top: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.search-err{
+    color: #fff;
+    font-size: 22px;
+    visibility: hidden;
+    text-align: center;
+}
+.active.search-err{
+    visibility: visible;
+}
+.app{
+
+    z-index: 10;
+    max-width: 395px;
+    height: 490px;
+    margin: 0 auto;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    background-color: rgba(7, 0, 0, 0.4);
+    border-radius: 16px;
+    backdrop-filter: blur(5px) saturate(200%);
+    padding: 16px;
+    
+}
+.box__input{
+    display: flex;
+
+    margin-right: -8px;
+    align-items: center;
+}
+#input-country-id{
+    background-color: rgba(7, 0, 0, 0.4);
+    outline: none;
+    border: none;
+    width: 85%;
+    padding: 0 40px;
+    border-radius: 50px;
+    height: 32px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: #fff;
+}   
+#input-country-id:focus{
+    border: 1px solid #fff;
+    
+}
+
+.box__input > img{
+    width: 15%;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+
+}
+.box__info{
+    margin-top: 22px;
+}
+#name-city{
+    font-size: 26px;
+    color: #fff;
+}
+#datetime-id{
+    margin-top: 12px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+}
+#temp-id{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 12px;
+}
+#feellike-temp-id{
+    margin-top: 14px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+#min-temp-id{
+    color: #fff;
+    margin-top: 12px;
+    font-size: 14px ;
+}
+#max-temp-id{
+    color: #fff;
+    
+    font-size: 14px ;
+}
+.weather__description{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.weather__description > img{
+    max-width: 50px;
+    max-height: 50px;
+}
+#weather__desp__title{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px
+}
+.main__weather__list{
+    display: flex;
+    margin-top: 16px;
+}
+.main__weather__item-img{
+    width: 35px;
+    height: 35px;
+}
+.main__weather__item{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.main__weather__item > span{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 8px;
+}
+.subset__info{
+    display: flex;
+    margin-top: 16px;
+}
+.sunset-rise, .sunset-drop{
+    display: flex;
+    align-items: center;
+
+}
+.sunset-rise > img, .sunset-drop > img{
+    width: 50px;
+    
+    height: 50px;
+}
+#sunset__rise-hour, #sunset__drop-hour{
+    color: #fff;
+    margin: 0px 8px; 
+    font-size: 14px;
+}
